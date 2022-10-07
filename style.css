@@ -1,0 +1,545 @@
+/*
+html5doctor.comResetStylesheet
+v1.6.1
+LastUpdated:2010-09-17
+Author:RichardClark-http://richclarkdesign.com
+Twitter:@rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+navul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/*changecolourstosuityourneeds*/
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+/*changecolourstosuityourneeds*/
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1pxdotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*changebordercolourtosuityourneeds*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+/*on lin foont family
+font-family: 'Alkalami', serif;
+font-family: 'Bungee Spice', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Qwitcher Grypen', cursive;
+/*HEADER STYLING STARTS HERE*/
+body {
+  position: relative;
+}
+.main_header {
+  width: 100%;
+  background-color: rgb(42, 140, 42);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  z-index: 20;
+  position: fixed;
+}
+.background {
+  position: fixed;
+  display: none;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(0, 0, 0, 0.3);
+}
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: auto;
+  margin-left: 1.5rem;
+
+  margin-top: 10px;
+  position: absolute;
+}
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #000;
+  display: block;
+  margin: 0.6rem 0;
+}
+.happlhdiv {
+  margin-left: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.happyh_title {
+  color: white;
+  font-weight: 900;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-family: "Alkalami", serif;
+}
+.mobile-nav {
+  display: none;
+  background-color: white;
+
+  width: 50%;
+  height: 100vh;
+}
+.mobile-nav__items {
+  list-style-type: none;
+  padding: 20px;
+  margin-top: 30px;
+}
+.mobile-nav__item {
+  line-height: 5rem;
+}
+.mobile-nav__item a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: green;
+  font-family: "Poppins", sans-serif;
+}
+
+.m-h-nav_ul_list {
+  display: inline-block;
+}
+.main-header_div {
+  display: none;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+.m-h_nav {
+  display: none;
+  float: right;
+  margin-right: 30px;
+}
+
+.m-h-div_link {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+.m-h-nav_ul {
+  list-style-type: none;
+}
+.m-h-nav_ul_list_link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+}
+.mainhead_img {
+  width: 50px;
+  height: 50px;
+}
+.m-h-nav_ul_list {
+  padding-left: 15px;
+}
+.m-h-nav_ul_list_link:hover {
+  color: white;
+  cursor: pointer;
+  border-bottom: 5px solid white;
+  padding: 3px 0;
+}
+.m-h-nav_ul_list_link:active {
+  color: black;
+}
+.m-h-nav_ul_list_linktwo {
+  color: white;
+  background-color: rgb(176, 11, 11, 0.7);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.m-h-nav_ul_list_linktwo:hover,
+.m-h-nav_ul_list_linktwo:active {
+  color: rgb(176, 11, 11, 0.7);
+  cursor: pointer;
+  border-bottom: none;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  height: 120px;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}
+/*8MAIN STYLING STARTS HER*/
+#product-overview {
+  background-image: url("./Assets/freedom.jpg");
+  z-index: -30;
+  padding: 20px;
+  height: 528px;
+  background-position: 10%;
+  background-size: cover;
+  position: relative;
+}
+#product-overview h1 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  left: 0;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+.section-title {
+  color: rgb(53, 151, 31);
+  font-family: Roboto, "Times New Roman";
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.plan {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.plan_options {
+  background-color: #d5ffdc;
+  font-family: "Bungee Spice", cursive;
+  width: 100%;
+}
+.plan_optionstwo {
+  background-color: rgb(5, 137, 5);
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgb(17, 15, 15, 0.5);
+  margin-top: 2rem;
+  text-align: center;
+}
+.plan_optionsthree {
+  margin-top: 2rem;
+}
+.options__h1 {
+  margin: 5px 0;
+}
+.options__h2 {
+  margin: 15px 0;
+}
+.options__h3 {
+  margin: 15px 0;
+}
+.options__ul {
+  margin: 20px 0;
+}
+.options__btndiv {
+  margin: 20px 0;
+}
+.options__btn {
+  background-color: white;
+  color: #01200a;
+  font-family: sans-serif;
+}
+.options__btn:hover {
+  background-color: #01200a;
+  color: white;
+}
+.plan__anotation {
+  background-color: white;
+  color: rgb(5, 137, 5);
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px rgb(17, 15, 15, 0.5);
+  border-radius: 8px;
+  width: 90%;
+  margin-top: 5px;
+  margin: 5px auto;
+}
+.options__ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.options__hli {
+  margin: 10px 0;
+  font-weight: bold;
+}
+.options__h1 {
+  color: rgb(5, 137, 5);
+}
+.options__h2 {
+  color: rgb(136, 165, 169);
+}
+.options__h1wh {
+  margin: 10px 0;
+  color: white;
+}
+.options__btn {
+  background-color: rgb(2, 21, 2);
+  color: white;
+  font: inherit;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.options__btn:hover {
+  background-color: white;
+  color: rgb(2, 21, 2);
+  border: 2px solid rgb(2, 21, 2);
+}
+/*LAST PART OF THE MAIN SECTION*/
+
+#key-features {
+  background-color: rgb(176, 11, 11, 0.7);
+  height: 650px;
+  margin-top: 50px;
+  text-align: center;
+}
+#key-features .section-title {
+  color: white;
+  margin-bottom: 20px;
+}
+.key-feature__list {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.key-feature {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  vertical-align: top;
+}
+.key-feature__description {
+  text-align: center;
+  color: white;
+  margin-top: 40px auto;
+  font-weight: 900;
+
+  display: inline-block;
+}
+.key-feature__image {
+  width: 100px;
+  background-color: white;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+#product-overview h1 {
+  position: absolute;
+  bottom: 20%;
+}
+/*FOOTER STYLING STARTS HERE*/
+.main-footer {
+  background-color: #000;
+  padding: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.main-footer__links {
+  display: flex;
+  list-style: none;
+}
+.main-footer__link a {
+  color: white;
+  list-style: none;
+  padding: 20px;
+  text-decoration: none;
+}
+.main-footer__link:hover a,
+.main-footer__link:active a {
+  color: rgb(5, 137, 5);
+  cursor: pointer;
+}
